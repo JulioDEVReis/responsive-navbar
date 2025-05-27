@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Tahoma;
+    font-family: Verdana, Tahoma, sans-serif;
     line-height: 1.6;
     color: #333;
     background-image: url('../images/background.jpg');
@@ -17,7 +17,8 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 .navbar {
@@ -52,6 +53,15 @@ body {
     padding: 0.5rem;
 }
 
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2c5aa0;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -72,6 +82,7 @@ body {
     font-weight: 500;
     border-radius: 5px;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-link:hover {
@@ -101,4 +112,91 @@ body {
 
 .lang:active {
     color: #4a90e2;
+}
+
+.lang-divider {
+    color: black;
+    opacity: 0.3;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 1rem 1rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.8);
+        transition: all 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .nav-link {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .hamburguer {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .menu-hamburguer:checked ~ .nav-menu {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-hamburguer:checked ~ .hamburguer .bar:nth-child(1) {
+        transform: rotate(45deg) translate(6px 6px);
+    }
+
+    .menu-hamburguer:checked ~ .hamburguer .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer:checked ~ .hamburguer .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px -6px);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        padding: 1.5rem;
+    }
+
+    .language-switcher {
+        width: 100%;
+        justify-content: center;
+    }
 }
