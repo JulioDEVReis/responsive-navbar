@@ -4,6 +4,7 @@ This project showcases a responsive website featuring a modern navigation system
 
 ## Project Structure
 
+```
 .
 ├── README.md
 ├── static
@@ -13,6 +14,7 @@ This project showcases a responsive website featuring a modern navigation system
 ├── templates
 │   └── index.html
 └── tree.txt
+```
 
 ## Desktop Navigation Design
 
