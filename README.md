@@ -13,7 +13,7 @@ This project showcases a responsive website featuring a modern navigation system
 │   └── js
 ├── templates
 │   └── index.html
-└── tree.txt
+
 ```
 
 ## Desktop Navigation Design
