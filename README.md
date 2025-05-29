@@ -6,13 +6,13 @@ This project showcases a responsive website featuring a modern navigation system
 
 ```
 .
+├── index.html
 ├── README.md
-├── static
-│   ├── css
-│   ├── images
-│   └── js
-├── templates
-│   └── index.html
+└── static
+    ├── css
+    │   └── style.css
+    └── images
+        └── background.jpg
 
 ```
 
