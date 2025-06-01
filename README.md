@@ -38,10 +38,10 @@ Main screen - index.html:
 ![main screen - index.html](<static/images/Captura de ecrã 2025-06-01, às 12.14.04.png>)
 
 link color change on mouseover:
-![change link color on mouse hover](<static/images/Captura de ecrã 2025-06-01, às 12.14.28.png>)
+![change link color on mouse hover](<static/images/Captura de ecrã 2025-06-01, às 12.14.28.png>)
 
 Hamburguer menu on screens than 768px:
-![hamburguer menu](<static/images/Captura de ecrã 2025-06-01, às 12.18.13.png>)
+![hamburguer menu](<static/images/Captura de ecrã 2025-06-01, às 12.18.13.png>)
 
 Menu links when clicking on the hamburger menu:
-![menu links in the hamburguer menu](<static/images/Captura de ecrã 2025-06-01, às 12.18.26.png>)
+![menu links in the hamburguer menu](<static/images/Captura de ecrã 2025-06-01, às 12.18.26.png>)
